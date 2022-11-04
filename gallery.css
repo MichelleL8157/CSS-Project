@@ -21,11 +21,12 @@ nav{
 }
 img{
     width: auto;
-    height: 200px;
+    height: 300px;
+    grid-column: 1fr;
+    grid-row: 1fr;
 }
 .pics{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-column-gap: 5px;
 }
